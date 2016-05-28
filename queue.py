@@ -26,7 +26,7 @@ class Queue(object):
         return len(self._list)
 
     def empty(self):
-        """Empty queue."""
+        """Empty queue (and return items emptied)."""
 
         remaining = self._list
         self._list = []
@@ -52,10 +52,8 @@ class Queue(object):
             >>> q.length
             3
         """
+        self._list.append(item)
 
-        # FIXME
-
-        pass
 
     def peek(self):
         """Return but don't remove the first item in the queue.
@@ -72,6 +70,4 @@ class Queue(object):
             <Queue ['buy flight', 'pack', 'enjoy vacation']>
         """
 
-        # FIXME
-
-        pass
+        return self._list[0]

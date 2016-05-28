@@ -1,0 +1,40 @@
+RUNTIME
+1. workload = n
+2. O(1), O(log n), O(n), O(n log n), O(n^2),O(2^n)
+
+
+STACKS & QUEUES
+1.  1. stack
+    2. queue
+    3. queue
+
+2. answering customer service calls, the help queue at Hackbright 
+3. cleaning dishes piled in the sink, unloading a truck
+
+
+LINKED LISTS
+1.  The nodes -- node apple, node berry, node cherry (boxes)
+    Data for each node -- "apple", "berry", "cherry" (strings)
+    The head -- node apple (box)
+    The tail -- none specified 
+
+2. In a singly linked list, each node has a node.next attribute. In a doubly-
+linked list, each node has both a node.next and node.prev attribute.
+
+3. It's faster to append to a linked list if we keep track of the tail because
+then we don't have to iterate through the list to find the tail. It's constant 
+time vs. linear time. 
+
+
+TREES
+1. BFS: food, Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, 
+BURRITO!
+
+2. DFS: food, Mexican, enchiladas, tacos, burrito, Indian, saag, tikka masala, 
+Italian, pizza, Sicilian, New York-style, CHICAGO-STYLE! 
+
+3. In a binary search tree, each node has a left and right child (even if 
+self.left or self.right = None)
+
+
+

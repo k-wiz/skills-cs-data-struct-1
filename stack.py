@@ -75,12 +75,8 @@ class Stack(object):
             >>> s.length()
             3
         """
-
-        count = 0
-        for item in self._list:
-            count += 1
-
-        return count
+        
+        return len(self._list)
 
         
     def empty(self):

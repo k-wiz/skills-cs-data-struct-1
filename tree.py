@@ -26,9 +26,7 @@ class Node(object):
             2
         """
 
-        # FIXME
-
-        pass
+        return len(self.children)
 
 
 class Tree(object):
@@ -47,10 +45,20 @@ class Tree(object):
 
         Start at the root, and return None if not found.
         """
+        #List of nodes to check against data. LIFO. 
+        to_visit = [self.root]
 
-        # FIXME
+        #While there's something in to_visit, pop off the last node in the
+        #list. If it's the node we're looking for, return it. Otherwise, 
+        #add node's children to the end of the list. 
+        while to_visit:
+            node = self.pop()
+            if node.data == data:
+                return node
+ 
+            to_visit.extend(node.children)
 
-        pass
+
 
     def breadth_first_search(self, data):
         """Return node object with this data, traversing the tree breadth-first.

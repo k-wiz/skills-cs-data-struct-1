@@ -76,6 +76,8 @@ class LinkedList(object):
             fish
         """
 
+        #A linkedlist is not iterable. Get to each item by resetting current 
+        #to current.next. 
         current = self.head
         while current is not None:
             print current.data
@@ -104,7 +106,7 @@ class LinkedList(object):
                 return current
             i = i + 1
             current = current.next
-            
+
 
 
 
